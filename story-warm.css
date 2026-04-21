@@ -68,7 +68,11 @@ h1.hero-title{
   font-size:clamp(14px,3.8vw,20px); color:var(--brown); font-weight:600;
 }
 .hero-mascot{
-  display:none;
+  display:block;
+  width:80px;
+  margin-left:auto;
+  margin-top:12px;
+  filter:drop-shadow(3px 3px 0 var(--ink));
 }
 
 /* WHY CARD */
