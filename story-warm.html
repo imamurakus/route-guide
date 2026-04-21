@@ -23,10 +23,10 @@
 <!-- HERO -->
 <header class="hero">
   <div class="hero-glow"></div>
-  <img class="hero-mascot" src="rakuta_walking.png" alt="">
   <div class="hero-inner">
-    <p class="kicker"><span class="dot"></span>ROUTE GUIDE · 2026</p>
-    <h1 class="hero-title">開発本部<br><span class="hero-stamp">懇親会2026</span></h1>
+    <div class="hero-text">
+      <p class="kicker"><span class="dot"></span>ROUTE GUIDE · 2026</p>
+      <h1 class="hero-title">開発本部<br><span class="hero-stamp">懇親会2026</span></h1>
     <div class="hero-route">
       <div class="loc">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
@@ -42,6 +42,8 @@
         <span>懇親会会場</span>
       </div>
     </div>
+    </div><!-- /.hero-text -->
+    <img class="hero-mascot" src="rakuta_egao.png" alt="">
   </div>
 </header>
 
@@ -116,7 +118,7 @@ const STEPS = [
   { t:'歩道橋があるので渡る',                                   imgs:['04_step4.jpg'] },
   { t:'ひろびろした歩道橋を渡る',                               imgs:['05_step5.jpg'] },
   { t:'歩道橋を降りると会場が見える',                           imgs:['06_step6.jpg'] },
-  { t:'超広い遊歩道を歩いて\n会場着！', note:'運営メンバーが建物入口〜宴会場までご案内します！', imgs:['07_step7.jpg'], last:true },
+  { t:'超広い遊歩道を歩いて\n会場着！', note:'運営メンバーが建物入口〜宴会場までご案内します！', imgs:['07_step7.jpg'] },
 ];
 
 const container = document.getElementById('steps');

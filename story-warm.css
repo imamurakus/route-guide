@@ -55,29 +55,33 @@ h1.hero-title{
   padding:2px 14px;display:inline-block;transform:rotate(-1.5deg);
   box-shadow:4px 4px 0 var(--ink);border-radius:4px;
 }
+.hero-inner{
+  position:relative;max-width:1180px;margin:0 auto;
+  display:flex; align-items:flex-end; gap:16px;
+}
+.hero-text{flex:1; position:relative; z-index:1}
 .hero-route{
-  margin-top:22px; display:grid; gap:12px;
-  grid-template-columns:1fr;
+  margin-top:22px; display:flex; flex-wrap:wrap;
+  align-items:center; gap:8px 14px;
 }
 .hero-route .loc{
-  display:flex;align-items:center;gap:10px;
+  display:flex;align-items:center;gap:8px;
   font-size:clamp(14px,3.8vw,20px); color:var(--brown); font-weight:600;
 }
 .hero-mascot{
-  position:absolute;
-  right:-24px; bottom:-40px;
-  width:clamp(180px,40vw,360px);
-  opacity:.18; transform:rotate(-8deg);
-  pointer-events:none; z-index:0;
-  filter:drop-shadow(4px 4px 0 var(--ink));
+  width:110px; flex-shrink:0;
+  opacity:1;
+  filter:drop-shadow(3px 3px 0 var(--ink));
+  position:relative; z-index:1;
+  align-self:flex-end;
 }
-.hero-inner > *{position:relative;z-index:1}
 
 /* WHY CARD */
 .why{
   background:var(--paper); color:var(--ink);
   border:2.5px solid var(--ink);
   box-shadow:6px 6px 0 var(--ink);
+  margin-top:24px;
   border-radius:22px; padding:24px 22px 26px;
   position:relative; overflow:visible;
   margin:0 22px;
@@ -163,7 +167,7 @@ h1.hero-title{
   height:0;
 }
 .tl-walker{
-  position:absolute; left:-10px;
+  position:absolute; left:-10px; top:0;
   width:64px; pointer-events:none;
   transition:top .35s cubic-bezier(.2,.7,.3,1);
   filter:drop-shadow(3px 3px 0 var(--ink));
@@ -231,7 +235,7 @@ h1.hero-title{
   border-radius:12px; overflow:hidden;
   border:1.5px solid var(--ink);
   background:var(--cream-deep);
-  aspect-ratio:4/3;
+  aspect-ratio:16/9;
 }
 .step-img img{width:100%;height:100%;object-fit:cover;display:block}
 
@@ -307,9 +311,10 @@ h1.hero-title{
 /* RESPONSIVE */
 @media (min-width:720px){
   .hero{padding:80px 44px 100px}
-  .hero-route{grid-template-columns:auto auto; gap:28px; margin-top:32px}
-  .hero-mascot{right:40px;bottom:-60px}
-  .why{margin:0 44px; padding:36px 40px 40px; border-radius:26px}
+  .hero-inner{gap:32px; align-items:flex-end}
+  .hero-mascot{width:clamp(160px,22vw,280px)}
+  .hero-route{margin-top:32px; gap:10px 20px}
+  .why{margin:24px 44px 0; padding:36px 40px 40px; border-radius:26px}
   .why-list{grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px}
   .section{padding:72px 44px 0}
   .timeline{padding-left:90px; margin-top:56px}
