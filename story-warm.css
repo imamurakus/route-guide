@@ -71,7 +71,7 @@ h1.hero-title{
 }
 .hero-mascot{
   display:block;
-  width:80px; flex-shrink:0;
+  width:100px; flex-shrink:0;
   align-self:flex-start;
   filter:drop-shadow(3px 3px 0 var(--ink));
   pointer-events:none; z-index:1;
@@ -267,6 +267,7 @@ h1.hero-title{
   margin:16px 0 10px; font-weight:800; letter-spacing:-0.5px;
   color:var(--ink); position:relative;
 }
+.arrival img.mascot{ margin-bottom:32px; }
 .arrival p{font-size:clamp(16px,4.5vw,24px); color:var(--orange-deep); font-weight:700; margin:0; position:relative}
 .arrival .end{
   margin-top:40px; font-size:11px; letter-spacing:4px;
