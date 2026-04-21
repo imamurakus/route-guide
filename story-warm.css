@@ -230,7 +230,8 @@ h1.hero-title{
   display:grid; gap:6px;
   grid-template-columns:1fr;
 }
-.step-imgs.multi{grid-template-columns:repeat(auto-fit,minmax(0,1fr))}
+.step-imgs.multi{grid-template-columns:1fr 1fr}
+.step-imgs.multi .step-img:first-child{grid-column:1 / -1}
 .step-img{
   border-radius:12px; overflow:hidden;
   border:1.5px solid var(--ink);
